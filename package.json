@@ -1,0 +1,54 @@
+{
+  "name": "wecom-robot-mcp",
+  "version": "1.0.0",
+  "description": "企业微信机器人 MCP (Model Context Protocol) 服务，支持发送 Markdown 消息、文件和图片",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --test tests/*.test.js",
+    "lint": "node --check index.js && node --check src/*.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "wecom",
+    "企业微信",
+    "机器人",
+    "webhook",
+    "markdown",
+    "chatbot"
+  ],
+  "author": {
+    "name": "Hamm",
+    "email": "admin@hamm.cn"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HammCn/WeComRobotMCP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HammCn/WeComRobotMCP/issues",
+    "email": "admin@hamm.cn"
+  },
+  "homepage": "https://github.com/HammCn/WeComRobotMCP#readme",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "wecom-robot-mcp": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
